@@ -11,14 +11,14 @@
 
 .DESCRIPTION
     The script operates exclusively in READ-ONLY mode. It changes nothing in Active Directory and nothing on the
-    domain controllers, requests no tickets, tests no passwords, and transfers no data.
+    domain controllers, requests no tickets, tests no passwords, and sends no data to third parties or the internet.
     It writes exactly one HTML file (and optionally CSV files) to the specified output folder.
 
     The Light version only checks accounts and the directory and needs a normal domain account.
 
     Deutsch:
     Das Skript arbeitet ausschließlich LESEND. Es ändert nichts im Active Directory und nichts an den
-    Domänencontrollern, fordert keine Tickets an, testet keine Kennwörter und überträgt keine Daten.
+    Domänencontrollern, fordert keine Tickets an, testet keine Kennwörter und sendet keine Daten an Dritte oder ins Internet.
     Es schreibt genau eine HTML-Datei (und auf Wunsch CSV-Dateien) in den angegebenen Ausgabeordner.
 
     Die Light-Version prüft nur Konten und Verzeichnis und braucht dafür ein normales Domänenkonto.
