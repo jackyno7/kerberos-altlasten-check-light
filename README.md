@@ -1,6 +1,6 @@
 # Kerberos-Altlasten-Check Light – typische Kerberos-Schwachstellen im Active Directory
 
-Kostenloses PowerShell-Skript: prüft Kerberos-Einstellungen, Delegierung und Altlasten im Active Directory in **5 Punkten** und erzeugt einen übersichtlichen **HTML-Bericht auf Deutsch oder Englisch** (`-Language de|en`, Standard je nach Windows-Sprache). Es arbeitet **ausschließlich lesend**: Es ändert nichts, legt nichts an und überträgt keine Daten.
+Kostenloses PowerShell-Skript: prüft Kerberos-Einstellungen, Delegierung und Altlasten im Active Directory in **5 Punkten** und erzeugt einen übersichtlichen **HTML-Bericht auf Deutsch oder Englisch** (`-Language de|en`, Standard je nach Windows-Sprache). Es arbeitet **ausschließlich lesend**: Es ändert nichts, legt keine Objekte an und sendet keine Daten an Dritte oder ins Internet.
 
 ![Beispielbericht](Beispielbericht.png)
 
@@ -24,7 +24,7 @@ Jeder Befund kommt mit Erklärung und Empfehlung.
 powershell -ExecutionPolicy Bypass -File .\Kerberos-Altlasten-Check-Light.ps1
 ```
 
-Alle Optionen zeigt `Get-Help .\Kerberos-Altlasten-Check-Light.ps1 -Detailed`. Voraussetzungen und Rechte stehen im Kopf des Skripts. Getestet mit Windows Server 2019, 2022 und 2025 in Testdomänen (deutsches Windows).
+Alle Optionen zeigt `Get-Help .\Kerberos-Altlasten-Check-Light.ps1 -Detailed`. Voraussetzungen und Rechte stehen im Kopf des Skripts. Getestet mit Windows Server 2025 in Testdomänen (deutsches Windows).
 
 ## Vollversion
 
@@ -102,7 +102,7 @@ Vorlagen und Checklisten (Notfallplan, Backup, Passwortrichtlinie, Onboarding, H
 
 ### English
 
-Free, read-only PowerShell script that checks Kerberos settings, delegation and legacy leftovers in Active Directory (5 checks, HTML report in German or English (`-Language de|en`) with findings and recommendations). No changes are made and no data leaves the machine. Run: `powershell -ExecutionPolicy Bypass -File .\Kerberos-Altlasten-Check-Light.ps1`. The full version with 26 checks: https://mueller86.gumroad.com/l/zptvct
+Free, read-only PowerShell script that checks Kerberos settings, delegation and legacy leftovers in Active Directory (5 checks, HTML report in German or English (`-Language de|en`) with findings and recommendations). No changes are made and no data is sent to third parties or the internet; the report stays local. Run: `powershell -ExecutionPolicy Bypass -File .\Kerberos-Altlasten-Check-Light.ps1`. The full version with 26 checks: https://mueller86.gumroad.com/l/zptvct
 
 <!-- querverweis-en:anfang -->
 #### All scripts and templates
